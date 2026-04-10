@@ -1,0 +1,391 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@source "../src/**/*.tsx";
+
+/* ── Bizmong Design System Palette ────────────────────────────────────── */
+@theme {
+  --color-white: #ffffff;
+  --color-black: #121212;
+  --color-page-bg: #f2f2f5;
+
+  /* Bizmong Blue */
+  --color-bizmong-blue-10: #f1f6ff;
+  --color-bizmong-blue-20: #e7f0ff;
+  --color-bizmong-blue-25: #cee2ff;
+  --color-bizmong-blue-30: #abcdff;
+  --color-bizmong-blue-40: #89b8ff;
+  --color-bizmong-blue-45: #5096ff;
+  --color-bizmong-blue-50: #1774ff;
+  --color-bizmong-blue-55: #005fee;
+  --color-bizmong-blue-60: #0047b0;
+  --color-bizmong-blue-70: #003481;
+  --color-bizmong-blue-80: #002b6a;
+  --color-bizmong-blue-90: #001d48;
+  --color-bizmong-blue-99: #03152f;
+
+  /* Crystal Blue */
+  --color-crystal-blue-10: #edf8ff;
+  --color-crystal-blue-20: #e0f3ff;
+  --color-crystal-blue-25: #c7e9ff;
+  --color-crystal-blue-30: #bae4ff;
+  --color-crystal-blue-40: #8dd2ff;
+  --color-crystal-blue-45: #69c4ff;
+  --color-crystal-blue-50: #41b4ff;
+  --color-crystal-blue-55: #009aff;
+  --color-crystal-blue-60: #0087df;
+  --color-crystal-blue-70: #006ab0;
+  --color-crystal-blue-80: #00426e;
+  --color-crystal-blue-90: #002842;
+  --color-crystal-blue-99: #001a2c;
+
+  /* Mint */
+  --color-mint-10: #f3fbfb;
+  --color-mint-20: #ebf8f8;
+  --color-mint-30: #dff7f7;
+  --color-mint-40: #c9f7f8;
+  --color-mint-45: #a0f0f3;
+  --color-mint-50: #41e6ec;
+  --color-mint-55: #00dee6;
+  --color-mint-60: #00c6ce;
+  --color-mint-70: #009297;
+  --color-mint-80: #005659;
+  --color-mint-90: #003739;
+  --color-mint-99: #021e1f;
+
+  /* Green */
+  --color-green-10: #f3fbf2;
+  --color-green-20: #ebfaea;
+  --color-green-30: #dffadd;
+  --color-green-40: #d1f5ce;
+  --color-green-45: #bef2b9;
+  --color-green-50: #91f399;
+  --color-green-55: #54e990;
+  --color-green-60: #16d78a;
+  --color-green-70: #14d3a3;
+  --color-green-80: #00936e;
+  --color-green-90: #00543f;
+  --color-green-99: #00271d;
+
+  /* Lime Yellow */
+  --color-lime-yellow-10: #fdfeee;
+  --color-lime-yellow-20: #fcfdd5;
+  --color-lime-yellow-30: #f9fabb;
+  --color-lime-yellow-40: #fcfe90;
+  --color-lime-yellow-45: #fcff55;
+  --color-lime-yellow-50: #fbff1b;
+  --color-lime-yellow-55: #f4f900;
+  --color-lime-yellow-60: #dde100;
+  --color-lime-yellow-70: #b4b700;
+  --color-lime-yellow-80: #797b00;
+  --color-lime-yellow-90: #424300;
+  --color-lime-yellow-99: #232400;
+
+  /* Spring Yellow */
+  --color-spring-yellow-10: #fdfbeb;
+  --color-spring-yellow-20: #fbf7d2;
+  --color-spring-yellow-30: #fff8b8;
+  --color-spring-yellow-40: #fff492;
+  --color-spring-yellow-45: #fff067;
+  --color-spring-yellow-50: #ffec3c;
+  --color-spring-yellow-55: #ffe600;
+  --color-spring-yellow-60: #e2cc00;
+  --color-spring-yellow-70: #ad9b00;
+  --color-spring-yellow-80: #665c00;
+  --color-spring-yellow-90: #3e3700;
+  --color-spring-yellow-99: #272300;
+
+  /* Purple */
+  --color-purple-10: #fefbff;
+  --color-purple-20: #f9edff;
+  --color-purple-30: #f2d6ff;
+  --color-purple-40: #e9baff;
+  --color-purple-45: #de96ff;
+  --color-purple-50: #d478ff;
+  --color-purple-55: #cb59ff;
+  --color-purple-60: #ad36e3;
+  --color-purple-70: #861cb8;
+  --color-purple-80: #580a7d;
+  --color-purple-90: #290247;
+  --color-purple-99: #150124;
+
+  /* Pink */
+  --color-pink-10: #fffafe;
+  --color-pink-20: #feecfb;
+  --color-pink-30: #fed3f7;
+  --color-pink-40: #ffb8f3;
+  --color-pink-45: #ff94ed;
+  --color-pink-50: #fa73e3;
+  --color-pink-55: #f553da;
+  --color-pink-60: #d331b8;
+  --color-pink-70: #a81690;
+  --color-pink-80: #730560;
+  --color-pink-90: #4a033e;
+  --color-pink-99: #24011e;
+
+  /* Red */
+  --color-red-10: #fffafa;
+  --color-red-20: #feecec;
+  --color-red-30: #fed5d5;
+  --color-red-40: #ffb5b5;
+  --color-red-45: #ff8c8c;
+  --color-red-50: #ff6363;
+  --color-red-55: #ff4242;
+  --color-red-60: #e52222;
+  --color-red-70: #b00c0c;
+  --color-red-80: #730303;
+  --color-red-90: #4d0e0e;
+  --color-red-99: #240202;
+
+  /* Orange */
+  --color-orange-10: #fffaf7;
+  --color-orange-20: #feeee5;
+  --color-orange-30: #fed9c4;
+  --color-orange-40: #ffbd96;
+  --color-orange-45: #ff9b61;
+  --color-orange-50: #ff7b2e;
+  --color-orange-55: #ff5e00;
+  --color-orange-60: #c94a00;
+  --color-orange-70: #913500;
+  --color-orange-80: #592100;
+  --color-orange-90: #3d1600;
+  --color-orange-99: #1a0a00;
+
+  /* Warm Gray */
+  --color-warm-gray-5: #f1f1f1;
+  --color-warm-gray-10: #eeeeee;
+  --color-warm-gray-15: #e9e9e9;
+  --color-warm-gray-20: #e6e6e6;
+  --color-warm-gray-25: #dfdfdf;
+  --color-warm-gray-30: #d4d4d4;
+  --color-warm-gray-35: #c8c8c8;
+  --color-warm-gray-40: #bbbbbb;
+  --color-warm-gray-45: #adadad;
+  --color-warm-gray-50: #9e9e9e;
+  --color-warm-gray-55: #868686;
+  --color-warm-gray-60: #747474;
+  --color-warm-gray-65: #696969;
+  --color-warm-gray-70: #5e5e5e;
+  --color-warm-gray-75: #535353;
+  --color-warm-gray-80: #494949;
+  --color-warm-gray-85: #3e3e3e;
+  --color-warm-gray-90: #333333;
+  --color-warm-gray-99: #282828;
+
+  /* Cool Gray */
+  --color-cool-gray-5: #f7f7f8;
+  --color-cool-gray-10: #f4f4f5;
+  --color-cool-gray-15: #eaebec;
+  --color-cool-gray-20: #e1e2e4;
+  --color-cool-gray-25: #dbdcdf;
+  --color-cool-gray-30: #d5d6d9;
+  --color-cool-gray-35: #cccdd0;
+  --color-cool-gray-40: #c3c5ca;
+  --color-cool-gray-45: #aeb0b6;
+  --color-cool-gray-50: #9da0a9;
+  --color-cool-gray-55: #878a93;
+  --color-cool-gray-60: #70737c;
+  --color-cool-gray-65: #5a5c63;
+  --color-cool-gray-70: #46474c;
+  --color-cool-gray-75: #37383c;
+  --color-cool-gray-80: #333438;
+  --color-cool-gray-85: #292a2d;
+  --color-cool-gray-90: #171719;
+  --color-cool-gray-99: #0f0f10;
+
+  /* Opacity Black */
+  --color-opacity-black-5: rgba(23, 23, 25, 0.05);
+  --color-opacity-black-8: rgba(23, 23, 25, 0.08);
+  --color-opacity-black-10: rgba(23, 23, 25, 0.1);
+  --color-opacity-black-12: rgba(23, 23, 25, 0.12);
+  --color-opacity-black-20: rgba(23, 23, 25, 0.2);
+  --color-opacity-black-42: rgba(23, 23, 25, 0.42);
+  --color-opacity-black-60: rgba(23, 23, 25, 0.6);
+  --color-opacity-black-78: rgba(23, 23, 25, 0.78);
+
+  /* Opacity White */
+  --color-opacity-white-5: rgba(255, 255, 255, 0.05);
+  --color-opacity-white-8: rgba(255, 255, 255, 0.08);
+  --color-opacity-white-10: rgba(255, 255, 255, 0.1);
+  --color-opacity-white-12: rgba(255, 255, 255, 0.12);
+  --color-opacity-white-20: rgba(255, 255, 255, 0.2);
+  --color-opacity-white-42: rgba(255, 255, 255, 0.42);
+  --color-opacity-white-60: rgba(255, 255, 255, 0.6);
+  --color-opacity-white-78: rgba(255, 255, 255, 0.78);
+  --color-opacity-white-90: rgba(255, 255, 255, 0.9);
+
+  /* Kakao */
+  --color-kakao-bg: #fee500;
+  --color-kakao-text: #000000d9;
+  --color-kakao-logo: #000;
+
+  /* Gradient */
+  --background-image-gradient-1: linear-gradient(
+    90deg, #179aff 0%, #00b2ff 18%, #1774ff 64%, #173aff 100%
+  );
+  --background-image-gradient-2: linear-gradient(
+    90deg, rgba(252, 254, 144, 0.5) 0%, rgba(197, 234, 218, 0.8) 12%, #aae0ff 32%, rgba(141, 210, 255, 0.9) 73%, rgba(219, 244, 186, 0.7) 100%
+  );
+  --background-image-gradient-3: linear-gradient(
+    90deg, #bef2b9 0%, #afe0d1 18%, #6fbaff 62%, #3a96ff 100%
+  );
+  --background-image-gradient-4: linear-gradient(180deg, #e7f3fd 0%, #f5fbff 100%);
+  --background-image-gradient-5: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 100%);
+
+  /* Blur */
+  --backdrop-blur-1: 20px;
+  --blur-20: 20px;
+  --blur-25: 25px;
+
+  /* Animation */
+  --animate-pop-blob: pop-blob 5s infinite;
+
+  /* Shadow */
+  --shadow-normal: 0 1px 2px 0 rgba(23,23,23,0.12), 0 0 1px 0 rgba(18,18,18,0.08), 0 0 1px 0 rgba(23,23,23,0.08);
+  --shadow-emphasize: 0 2px 8px 0 rgba(23,23,23,0.12), 0 1px 4px 0 rgba(23,23,23,0.08), 0 0 1px 0 rgba(23,23,23,0.08);
+  --shadow-strong: 0 6px 12px 0 rgba(23,23,23,0.12), 0 4px 8px 0 rgba(23,23,23,0.08), 0 0 4px 0 rgba(23,23,23,0.08);
+  --shadow-heavy: 0 16px 42px 0 rgba(23,23,23,0.12), 0 8px 24px 0 rgba(23,23,23,0.08), 0 0 8px 0 rgba(23,23,23,0.08);
+
+  /* Typography */
+  --font-size-display-2: 56px;
+  --font-size-display-2--line-height: 1.286;
+  --font-size-display-2--letter-spacing: -0.026em;
+  --font-size-display-3: 40px;
+  --font-size-display-3--line-height: 1.3;
+  --font-size-display-3--letter-spacing: -0.022em;
+  --font-size-title-1: 36px;
+  --font-size-title-1--line-height: 1.334;
+  --font-size-title-1--letter-spacing: -0.027em;
+  --font-size-title-2: 28px;
+  --font-size-title-2--line-height: 1.358;
+  --font-size-title-2--letter-spacing: -0.0236em;
+  --font-size-title-3: 24px;
+  --font-size-title-3--line-height: 1.334;
+  --font-size-title-3--letter-spacing: -0.015em;
+  --font-size-heading-1: 22px;
+  --font-size-heading-1--line-height: 1.364;
+  --font-size-heading-1--letter-spacing: -0.012em;
+  --font-size-heading-2: 20px;
+  --font-size-heading-2--line-height: 1.4;
+  --font-size-heading-2--letter-spacing: -0.012em;
+  --font-size-headline-1: 18px;
+  --font-size-headline-1--line-height: 1.445;
+  --font-size-headline-1--letter-spacing: -0.0002em;
+  --font-size-headline-2: 17px;
+  --font-size-headline-2--line-height: 1.412;
+  --font-size-headline-2--letter-spacing: -0.0002em;
+  --font-size-body-1: 16px;
+  --font-size-body-1--line-height: 1.5;
+  --font-size-body-1--letter-spacing: -0.0002em;
+  --font-size-body-2: 15px;
+  --font-size-body-2--line-height: 1.467;
+  --font-size-body-2--letter-spacing: -0.0002em;
+  --font-size-label-1: 14px;
+  --font-size-label-1--line-height: 1.429;
+  --font-size-label-1--letter-spacing: 0.0145em;
+  --font-size-label-2: 13px;
+  --font-size-label-2--line-height: 1.385;
+  --font-size-label-2--letter-spacing: 0.0194em;
+  --font-size-label-3: 12px;
+  --font-size-label-3--line-height: 1.385;
+  --font-size-label-3--letter-spacing: -0.011em;
+  --font-size-caption-1: 12px;
+  --font-size-caption-1--line-height: 1.334;
+  --font-size-caption-1--letter-spacing: 0.0252em;
+  --font-size-caption-2: 11px;
+  --font-size-caption-2--line-height: 1.273;
+  --font-size-caption-2--letter-spacing: 0.0311em;
+}
+
+/* Radix 호환 최소 변수 (UI 컴포넌트 빌드에 필요) */
+:root {
+  --radius: 0.5rem;
+  --background: #ffffff;
+  --foreground: #121212;
+  --border: #e1e2e4;
+  --input: #e1e2e4;
+  --ring: #9da0a9;
+  --primary: #121212;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #121212;
+  --muted: #f4f4f5;
+  --muted-foreground: #878a93;
+  --accent: #f4f4f5;
+  --accent-foreground: #121212;
+  --destructive: #e52222;
+  --destructive-foreground: #e52222;
+  --popover: #ffffff;
+  --popover-foreground: #121212;
+  --card: #ffffff;
+  --card-foreground: #121212;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --radius-sm: calc(var(--radius) - 0.25rem);
+  --radius-md: calc(var(--radius) - 0.125rem);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 0.25rem);
+  --radius-2xl: calc(var(--radius) + 0.5rem);
+}
+
+/* ── Keyframes ── */
+@keyframes pop-blob {
+  0% { transform: scale(1); }
+  33% { transform: scale(1.2); }
+  66% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* ── Utilities ── */
+@utility text-gradient-1 {
+  background: var(--background-image-gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@utility shadow-normal { box-shadow: var(--shadow-normal); }
+@utility shadow-emphasize { box-shadow: var(--shadow-emphasize); }
+@utility shadow-strong { box-shadow: var(--shadow-strong); }
+@utility shadow-heavy { box-shadow: var(--shadow-heavy); }
+
+@utility text-display-2 { font-size: var(--font-size-display-2); line-height: var(--font-size-display-2--line-height); letter-spacing: var(--font-size-display-2--letter-spacing); }
+@utility text-display-3 { font-size: var(--font-size-display-3); line-height: var(--font-size-display-3--line-height); letter-spacing: var(--font-size-display-3--letter-spacing); }
+@utility text-title-1 { font-size: var(--font-size-title-1); line-height: var(--font-size-title-1--line-height); letter-spacing: var(--font-size-title-1--letter-spacing); }
+@utility text-title-2 { font-size: var(--font-size-title-2); line-height: var(--font-size-title-2--line-height); letter-spacing: var(--font-size-title-2--letter-spacing); }
+@utility text-title-3 { font-size: var(--font-size-title-3); line-height: var(--font-size-title-3--line-height); letter-spacing: var(--font-size-title-3--letter-spacing); }
+@utility text-heading-1 { font-size: var(--font-size-heading-1); line-height: var(--font-size-heading-1--line-height); letter-spacing: var(--font-size-heading-1--letter-spacing); }
+@utility text-heading-2 { font-size: var(--font-size-heading-2); line-height: var(--font-size-heading-2--line-height); letter-spacing: var(--font-size-heading-2--letter-spacing); }
+@utility text-headline-1 { font-size: var(--font-size-headline-1); line-height: var(--font-size-headline-1--line-height); letter-spacing: var(--font-size-headline-1--letter-spacing); }
+@utility text-headline-2 { font-size: var(--font-size-headline-2); line-height: var(--font-size-headline-2--line-height); letter-spacing: var(--font-size-headline-2--letter-spacing); }
+@utility text-body-1 { font-size: var(--font-size-body-1); line-height: var(--font-size-body-1--line-height); letter-spacing: var(--font-size-body-1--letter-spacing); }
+@utility text-body-2 { font-size: var(--font-size-body-2); line-height: var(--font-size-body-2--line-height); letter-spacing: var(--font-size-body-2--letter-spacing); }
+@utility text-label-1 { font-size: var(--font-size-label-1); line-height: var(--font-size-label-1--line-height); letter-spacing: var(--font-size-label-1--letter-spacing); }
+@utility text-label-2 { font-size: var(--font-size-label-2); line-height: var(--font-size-label-2--line-height); letter-spacing: var(--font-size-label-2--letter-spacing); }
+@utility text-label-3 { font-size: var(--font-size-label-3); line-height: var(--font-size-label-3--line-height); letter-spacing: var(--font-size-label-3--letter-spacing); }
+@utility text-caption-1 { font-size: var(--font-size-caption-1); line-height: var(--font-size-caption-1--line-height); letter-spacing: var(--font-size-caption-1--letter-spacing); }
+@utility text-caption-2 { font-size: var(--font-size-caption-2); line-height: var(--font-size-caption-2--line-height); letter-spacing: var(--font-size-caption-2--letter-spacing); }
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-page-bg text-black; }
+}
